@@ -1,14 +1,15 @@
-zProjets V2
+ï»¿zProjets V2
 ===========
 
-Site communautaire visant à permettre la présentation des projets des membres au grand public. Chaque projet a sa propre page mettant à disposition un forum, un système de news, ainsi qu'un système d'évaluation du projet par les autres membres.
+Site communautaire visant Ã  permettre la prÃ©sentation des projets des membres au grand public. Chaque projet a sa propre page mettant Ã  disposition un forum, un systÃ¨me de news, ainsi qu'un systÃ¨me d'Ã©valuation du projet par les autres membres.
 
 
-Les modules prévus
+
+Les modules prÃ©vus
 ---------------------
 
 * Membres
-* Messagerie Privée
+* Messagerie PrivÃ©e
 * Projets
 * Recrutements
 * Forum
