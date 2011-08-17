@@ -1,0 +1,2 @@
+imports:
+    - { resource: "@zProjetsUserBundle/Resources/config/security.yml" }
