@@ -46,3 +46,6 @@
 [submodule "vendor/bundles/FOS/UserBundle"]
 	path = vendor/bundles/FOS/UserBundle
 	url = git://github.com/FriendsOfSymfony/FOSUserBundle.git
+[submodule "vendor/bundles/EWZ/Bundle/RecaptchaBundle"]
+	path = vendor/bundles/EWZ/Bundle/RecaptchaBundle
+	url = https://github.com/excelwebzone/EWZRecaptchaBundle.git

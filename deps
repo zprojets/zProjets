@@ -61,3 +61,7 @@
 [FOSUserBundle]
     git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
     target=/bundles/FOS/UserBundle
+
+[EWZRecaptchaBundle]
+    git=https://github.com/excelwebzone/EWZRecaptchaBundle.git
+    target=/bundles/EWZ/Bundle/RecaptchaBundle
