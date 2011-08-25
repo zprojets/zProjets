@@ -65,6 +65,6 @@ fos_user:
     user_class: zProjets\UserBundle\Entity\User
     
 ewz_recaptcha:
-    public_key:   here_is_your_public_key
-    private_key:  here_is_your_private_key
+    public_key:   %ewz_recaptcha_public_key%
+    private_key:  %ewz_recaptcha_private_key%
     secure:       false
