@@ -1,5 +1,5 @@
 nbproject
 app/cache/*
 app/logs/*
-vendors/*
+vendor/*
 deps.lock
