@@ -63,8 +63,3 @@ fos_user:
     firewall_name: main
     use_listener: false
     user_class: zProjets\UserBundle\Entity\User
-    
-ewz_recaptcha:
-    public_key:   %ewz_recaptcha_public_key%
-    private_key:  %ewz_recaptcha_private_key%
-    secure:       false

@@ -2,6 +2,11 @@ parameters:
 #    z_projets_user.example.class: zProjets\UserBundle\Example
 
 services:
+    z_projets_user.registration.form.type:
+        class: zProjets\UserBundle\Form\Type\RegistrationFormType
+        arguments: [%fos_user.model.user.class%]
+        tags:
+            - { name: form.type, alias: fos_user_registration }
 #    z_projets_user.example:
 #        class: %z_projets_user.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
