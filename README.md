@@ -30,8 +30,9 @@ Tapez la commande :
 Pour récupérer les dernières modifications avant de travailler, tapez la commande :
     git pull
 
-La première fois, installez les vendors via la commande :
+La première fois, installez les vendors et générez le bootstrap via ces commandes :
     php bin/vendors install
+    php vendor/bundles/Sensio/Bundle/DistributionBundle/Resources/bin/build_bootstrap.php
 
 Pour mettre à jour les vendors
     php bin/vendors update

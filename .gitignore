@@ -3,3 +3,4 @@ app/cache/*
 app/logs/*
 vendor/*
 deps.lock
+app/bootstrap.php.cache
