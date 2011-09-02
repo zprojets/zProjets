@@ -1,6 +1,6 @@
 <?php
 
-namespace zProjets\UserBundle\Entity;
+namespace zProjets\Bundle\UserBundle\Entity;
 
 use FOS\UserBundle\Entity\Group as BaseGroup;
 use Doctrine\ORM\Mapping as ORM;

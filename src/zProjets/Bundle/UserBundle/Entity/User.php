@@ -1,5 +1,5 @@
 <?php
-namespace zProjets\UserBundle\Entity;
+namespace zProjets\Bundle\UserBundle\Entity;
 use FOS\UserBundle\Entity\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -17,7 +17,7 @@ class User extends BaseUser
     protected $id;
     
     /**
-     * @ORM\ManyToMany(targetEntity="zProjets\UserBundle\Entity\Group")
+     * @ORM\ManyToMany(targetEntity="zProjets\Bundle\UserBundle\Entity\Group")
      * @ORM\JoinTable(name="fos_user_user_group",
      *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}

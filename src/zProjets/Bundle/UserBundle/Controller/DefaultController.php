@@ -1,6 +1,6 @@
 <?php
 
-namespace zProjets\UserBundle\Controller;
+namespace zProjets\Bundle\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
