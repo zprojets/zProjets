@@ -5,7 +5,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="user")
+ * @ORM\Table(name="fos_user")
  */
 class User extends BaseUser
 {
@@ -15,6 +15,16 @@ class User extends BaseUser
     * @ORM\generatedValue(strategy="AUTO")
     */
     protected $id;
+    
+    /**
+     * @ORM\ManyToMany(targetEntity="zProjets\UserBundle\Entity\Group")
+     * @ORM\JoinTable(name="fos_user_user_group",
+     *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}
+     * )
+     */
+    protected $groups;
+    
     
     public function __construct()
     {
