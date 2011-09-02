@@ -29,6 +29,8 @@ registration.back: Retour à la page d'origine.
 registration.submit: Enregistrer
 registration.flash.user_created: L'utilisateur a été créé avec succès
 
+test.test: OK
+
 registration.email: |
     Bienvenue %username% !
 
@@ -63,8 +65,8 @@ layout.logged_in_as: Connecté sous le compte %username%
 # Form field labels
 fos_user_group_form_name: "Nom du groupe :"
 
-fos_user_profile_form_username:             "Pseudo :"
-fos_user_profile_form_email:                "Adresse e-mail :"
+fos_user_profile_form_user_username:             "Pseudo :"
+fos_user_profile_form_user_email:                "Adresse e-mail :"
 fos_user_profile_form_plainPassword_first:  "Mot de passe :"
 fos_user_profile_form_plainPassword_second: "Vérification :"
 
