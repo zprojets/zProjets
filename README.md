@@ -36,3 +36,21 @@ La première fois, installez les vendors et générez le bootstrap via ces comma
 
 Pour mettre à jour les vendors
     php bin/vendors update
+
+Créez le fichier app/config/parameters.ini, et configurez-le :
+
+```
+[parameters]
+    database_driver="pdo_mysql"
+    database_host=""
+    database_port=""
+    database_name=""
+    database_user="root"
+    database_password=""
+    mailer_transport="smtp"
+    mailer_host="localhost"
+    mailer_user=""
+    mailer_password=""
+    locale="fr"
+    secret=""
+```
