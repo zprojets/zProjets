@@ -4,7 +4,7 @@ fos_user_security:
 
 fos_user_profile:
     resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
-    prefix: /profile
+    prefix: /profil
 
 fos_user_register:
     resource: "@zProjetsUserBundle/Resources/config/routing/registration.xml"
@@ -12,12 +12,12 @@ fos_user_register:
 
 fos_user_resetting:
     resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
-    prefix: /resetting
+    prefix: /reinitialisation
 
 fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
-    prefix: /change-password  
-    
+    prefix: /changer-mot-de-passe
+
 fos_user_group:
     resource: "@zProjetsUserBundle/Resources/config/routing/group.xml"
     prefix: /groupe
