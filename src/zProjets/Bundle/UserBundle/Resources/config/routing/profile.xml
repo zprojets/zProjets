@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="fos_user_profile_show" pattern="/{user_id}">
+        <default key="_controller">zProjetsUserBundle:Profile:show</default>
+        <requirement key="user_id">\d+</requirement>
+        <requirement key="_method">GET</requirement>
+    </route>
+
+    <route id="fos_user_profile_show_with_pseudo" pattern="/{user_id}/{username}">
+        <default key="_controller">zProjetsUserBundle:Profile:show</default>
+        <default key="username">none</default>
+        <requirement key="user_id">\d+</requirement>
+        <requirement key="_method">GET</requirement>
+    </route>
+
+    <route id="fos_user_profile_edit" pattern="/modifier">
+        <default key="_controller">zProjetsUserBundle:Profile:edit</default>
+    </route>
+
+</routes>

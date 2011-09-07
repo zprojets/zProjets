@@ -63,3 +63,6 @@ fos_user:
     firewall_name: main
     use_listener: false
     user_class: zProjets\Bundle\UserBundle\Entity\User
+    
+    group:
+        group_class: zProjets\Bundle\UserBundle\Entity\Group

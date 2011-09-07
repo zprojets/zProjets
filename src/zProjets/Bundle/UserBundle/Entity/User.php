@@ -17,27 +17,95 @@ class User extends BaseUser
     protected $id;
     
     /**
-     * @ORM\ManyToMany(targetEntity="zProjets\Bundle\UserBundle\Entity\Group")
-     * @ORM\JoinTable(name="fos_user_user_group",
-     *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
-     *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}
-     * )
+     * @ORM\ManyToOne(targetEntity="zProjets\Bundle\UserBundle\Entity\Group")
      */
-    protected $groups;
+    protected $group;
+    
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    protected $hide_email = true;
+    
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $signature;
+    
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $biography;
+    
+    /**
+     * @ORM\Column(type="text")
+     */
+    protected $avatar;
+    
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $quote;
+    
+    /**
+     * @ORM\Column(type="integer", length=11)
+     */
+    protected $time_zone;
     
     
+
     public function __construct()
     {
         parent::__construct();
     }
-
-    /**
-     * Get id
-     *
-     * @return integer 
-     */
-    public function getId()
+    
+    public function getSignature() 
     {
-        return $this->id;
+        return $this->signature;
     }
+    
+    public function setSignature($signature) 
+    {
+        $this->signature = $signature;
+    }
+    
+    public function getBiography() 
+    {
+        return $this->biography;
+    }
+    
+    public function setBiography($biography) 
+    {
+        $this->biography = $biography;
+    }
+    
+    public function getAvatar() 
+    {
+        return $this->avatar;
+    }
+    
+    public function setAvatar($avatar) 
+    {
+        $this->avatar = $avatar;
+    }
+    
+    public function getQuote() 
+    {
+        return $this->quote;
+    }
+    
+    public function setQuote($quote) 
+    {
+        $this->quote = $quote;
+    }
+    
+    public function getTimeZone() 
+    {
+        return $this->time_zone;
+    }
+    
+    public function setTimeZone($timeZone) 
+    {
+        $this->time_zone = $timeZone;
+    }
+    
 }
